@@ -4,4 +4,4 @@ WORKDIR $APPROOT
 ADD target/hostnameapp-1.0.jar $APPROOT
 EXPOSE 8080
 ENTRYPOINT ["java"]
-CMD ["-jar","-Xmx128m","-Xms128m","-Djava.security.egd=file:/dev/./urandom", "/usr/nobodyhostnameapp-1.0.jar"]
+CMD ["-jar","-Xmx128m","-Xms128m","-Djava.security.egd=file:/dev/./urandom", "/usr/nobody/hostnameapp-1.0.jar"]
